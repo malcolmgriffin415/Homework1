@@ -1,0 +1,45 @@
+ul{
+    list-style-type: none;
+display: flex;
+justify-content: end;
+
+
+}
+li{
+    margin: 10px;
+
+}
+
+#navigation{
+    border: 1px solid red;
+flex: 80%;
+
+}
+#about_me_text{
+    border-right: 3px solid lightcoral;
+    flex:30%
+}
+
+#about_me_description{
+flex: 70%;
+text-align: center;
+}
+
+#about_me{
+    margin-top: 15px;
+   display: flex; 
+   width: 100%;
+   /* background-color: aqua; */
+   border: 1px solid black;
+}
+
+#navbar{
+    background-color: yellow;
+    display: flex;
+
+
+}
+
+#profile_logo{
+    border: 1px solid black;
+}
