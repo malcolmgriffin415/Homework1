@@ -91,18 +91,18 @@ header nav {
     display: flex;
     justify-content: flex-end;
     border: 1px solid red;
-    flex: 80%;
+    padding: 5px 5px;
+    margin: 5px 5px;
 }
 
 header nav ul{
     display: inline-flex;
-    flex-flow: row wrap;
-    margin: 5px 5px;
-    padding: 5px 5px;
+    flex-direction: column;
 }
 
 nav ul li {
     display: inline-flex;
+    flex-wrap: wrap;
 }
 
 header figure {
@@ -144,30 +144,44 @@ header figure img {
 
 
 main {
-    display: flex;
     background-color: var(--main-color);
-    height: 1000px;
-    flex-direction: column;
 
 }
 
-main section {
+section {
     display: flex;
+    
+}
+
+section article.item {
+    display: inline-flex;
     flex-flow: row wrap;
     justify-content: center;
     margin: 5px;
     padding: 5px;
     border: 2px solid black;
-    flex: 1;
 
 }
 
-main section.item {
-margin: 5px 5px;
-border: 2px solid black;
-padding: 2px 2px;
-
+article.item figure{
+    border: 3px solid black;
+    margin: 3px 3px;
+    padding: 6px 6px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    justify-content: center;
 }
+
+#main_project{
+    width: 200px;
+    
+}
+
+a.project img{
+    width: 100px;
+}
+
 
 footer{
     display: inline-flex;
