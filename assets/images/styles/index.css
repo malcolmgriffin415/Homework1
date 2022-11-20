@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --my-color: rgb(17, 17, 133);
+    --main-color: rgba(15, 166, 166, 0.864);
+
+}
+
+.title {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box1 {
+    flex: 2;
+    border-bottom: 1px solid black;
+    background-image: url(https://plus.unsplash.com/premium_photo-1661762886657-e6d1a970c864?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+    background-size: cover;
+}
+
+.box2 {
+    flex: 1;
+    border-bottom: 1px solid black;
+    background-image: url(https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+    background-size: cover;
+}
+
+.box3 {
+    flex: 1;
+    border-bottom: 1px solid black;
+    background-image: url(https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+    background-size: cover;
+}
+
+.aboutmebox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    flex: 1;
+}
+
+.aboutmetitle {
+    flex: 1;
+    border-right: 1px solid black;
+    background-size: cover;
+}
+
+.aboutmedescription {
+    flex: 3;
+    border-bottom: 1px solid black;
+    background-size: cover;
+}
+
+.projectbox {
+    width: 90%;
+    height: 90%;
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 2px solid blue;
+    margin: 4px 4px;
+    padding: 2px 2px 2px 2px;
+}
+
+header figure {
+    border: 3px solid var(--my-color);
+    border-radius: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid red;
+    flex: 80%;
+}
+
+header nav ul{
+    display: inline-flex;
+    flex-flow: row wrap;
+    margin: 5px 5px;
+    padding: 5px 5px;
+}
+
+nav ul li {
+    display: inline-flex;
+}
+
+header figure {
+    display: flex;
+    justify-content: flex-start;
+    border: 3px solid black;
+    margin: 4px 4px 4px 4px;
+    padding: 5px 5px;
+    font-family: fantasy;
+    font-size: 18px;
+}
+
+header figure img {
+    width: 150px;
+    height: 100px;
+}
+
+.contactinfobox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    flex: 1;
+}
+
+.contactinfotitle {
+    flex: 1;
+    border-right: 1px solid black;
+    background-size: cover;
+}
+
+.contactinfodescription {
+    flex: 3;
+    border-bottom: 1px solid black;
+    background-size: cover;
+}
+
+
+main {
+    display: flex;
+    background-color: var(--main-color);
+    height: 1000px;
+    flex-direction: column;
+
+}
+
+main section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    flex: 1;
+
+}
+
+main section.item {
+margin: 5px 5px;
+border: 2px solid black;
+padding: 2px 2px;
+
+}
+
+footer{
+    display: inline-flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+    border: 10px solid blue;
+}
+
+/*
+    laptop screens 
+
+*/
+@media onlyscreen and (min-width: 1000px) {
+    header figure img {
+        min-width: 80%;
+        
+    }
+}
